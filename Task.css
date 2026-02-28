@@ -1,0 +1,99 @@
+body{
+margin-left:3%;
+margin-right:0%;
+padding:16px;
+background-color:#000033;
+background: url(LYNX LOGO.jpg);
+background-image:url(MR_LYNX_COMPANY_LOGO.gif), 
+						url(MR_LYNX_COMPANY_LOGO.gif);
+background-repeat:repeat-y, repeat-x;
+background-size:50px;
+}
+
+h1 {
+color:#FF0000;
+}
+
+h2 {
+color:#FF0000
+}
+
+h3 {
+color:#FF0000
+}
+
+td, th{border:3px solid #OD1298;
+background-color:#E90542;
+background-image: url(Designer.png);
+color:white;
+}
+
+
+
+ul"#nav" li a {
+list-style: none;
+margin:0px;
+padding:o ;
+}
+ul#nav{
+float:center;
+margin:-5px 270px;
+padding:-250px;
+}
+ul#nav li{
+display: block;
+display: inline;
+width: 100px;
+height: 28px;
+line-height: 40px;
+text-transform: uppercase;
+text-decoration: none;
+text-align: center;
+}
+ul#nav li a {
+padding:2px 9px;
+margin:0px 2px;
+border:2px solid #FC6A08;
+border-image: url("MR_LYNX_COMPANY_LOGO.png") 30 stretch;
+background-color:#FCA908;
+text-decoration:none;
+text-align:center;
+color: black;
+font-size:76%;
+letter-spacing:0px;
+}
+.Header{
+Height: 10px;
+padding: 17px; /* header of header */
+background: #FF0066;
+border-top-left-radius:25px;
+border-bottom-right-radius:25px;
+font-size:20px;
+background:#FF0066 url("MR_LYNX_COMPANY_LOGO.gif") top right / 30px auto no-repeat;
+}
+#Main{
+margin-right:0%;/* make room for the left sidebar*/
+margin-left:0%; /* make room for the right sidebar*/
+width:900px;
+border-left:solid 3px #9900ff;
+border-right:solid 3px #9900FF;
+border-top:solid 3px #00FFFF;
+border-bottom:solid 3px #FFFFFF;
+color:#FFFFFF;
+font-size:112%;
+}
+
+#Footer{
+clear:both; /*start the footer below the float content */
+padding:16px;
+background: #238;
+background:url("MR_LYNX_COMPANY_LOGO.gif") top right / 39px auto repeat-x;
+font-size:20px;
+color:#000000;
+vertical-align:text-middle;
+}
+ @media screen and (min-width: 1720px) {
+body {
+background-color: skyblue;
+}
+}
