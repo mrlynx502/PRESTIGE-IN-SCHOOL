@@ -1,0 +1,117 @@
+<html>
+<head>
+<body>
+
+<mete charset="utf-8">
+
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+<mete name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="Stylesheet" href="Task.css"/>
+ 
+
+<title> The prestige in school life </title>
+</head>
+
+<center> <img alt="" height="100"src="LYNX LIBS.JPG"/>
+<center><h2> THE PRESTIGE IN SCHOOL LIFE </h2></center>
+
+
+<ul id="nav">
+<li><a href="#">Home</a></li>
+<li><a href="#">Services</a></li>
+<li><a href="#">Blog</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Contact</a></li>
+<li><a href="#">Think Thank</a></li>
+</ul>
+
+
+<div Class="Header">
+<marquee><b><Center> The world of school is fabulous </center></b></marquee>
+</div>
+
+<div id= "Main" style="right: 20px;">
+
+<h1><u> CONGRATULATION THAT YOU ARE IN SCHOOL. </u></h1>
+
+ <center><u>Quote for the first day in school</u></center> 
+ 
+ <q>HAPPINESS IS NICE IN INDIVIDUAL LIFE BUT YOU MUST KNOW THE TASK IN FRONT OF 
+ YOU AND TAKE CAUTION OF YOUR INNER MINDSET NOT TO CONTROL YOU.</q>
+
+
+<br>
+ 
+<center><u><h2>URGE OF ENTICEMENT AND URGE OF FOCUS.</h2></u></center>
+ 
+<p> Belief in your expectation and hard work and work toward it
+ you must succeed in life and pray toward it you we achieve what
+  your expectation is if you work hard.</P>
+<br>
+
+<center><u><h3> TRIANGULAR REASON AND TRIANGULAR LEAVING IN SCHOOL. </h3></u></center>
+<p> FRIENDS ARE GOOD BUT YOU MUST KNOW THE COMPANY YOU KEEP IN SCHOOL
+ SO YOU DON’T MISS THE TRIANGLURE PATH OF SCHOOL #TIME TABLE  </p>
+ 
+  <div id="comment-area" style="max-width: 600px; margin: 20px auto; text-align: left;">
+    <h3>Leave a Comment</h3>
+    
+    <!-- Input Form -->
+    <div style="background: #f4f4f4; padding: 20px; border-radius: 8px;">
+        <input type="text" id="user-name" placeholder="Full Name" required style="width: 100%; padding: 10px; margin-bottom: 10px; border-radius: 4px; border: 1px solid #ccc;">
+        <input type="email" id="user-email" placeholder="Email Address" required style="width: 100%; padding: 10px; margin-bottom: 10px; border-radius: 4px; border: 1px solid #ccc;">
+        <textarea id="user-msg" placeholder="Your Message" rows="4" required style="width: 100%; padding: 10px; margin-bottom: 10px; border-radius: 4px; border: 1px solid #ccc;"></textarea>
+        <button onclick="postComment()" style="background: #007bff; color: #fff; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer;">Submit</button>
+    </div>
+
+    <!-- Display Section -->
+    <div id="comment-list" style="margin-top: 30px;">
+        <h4>Recent Feedback</h4>
+        <div id="feed-container"></div>
+    </div>
+</div>
+
+<script>
+function postComment() {
+    const name = document.getElementById('user-name').value;
+    const email = document.getElementById('user-email').value;
+    const msg = document.getElementById('user-msg').value;
+    const container = document.getElementById('feed-container');
+
+    if (name && email && msg) {
+        // Create the display box
+        const commentDiv = document.createElement('div');
+        commentDiv.style.cssText = "border-bottom: 1px solid #ddd; padding: 15px 0; margin-bottom: 10px;";
+
+        // Combine Name, Email, and Message in the display
+        commentDiv.innerHTML = `
+            <strong style="font-size: 1.1em;">${name}</strong> 
+            <span style="color: #007bff; font-size: 0.9em;">(${email})</span>
+            <p style="margin-top: 8px; line-height: 1.5; color: #333;">${msg}</p>
+        `;
+
+        // Add newest comment to the top
+        container.prepend(commentDiv);
+
+        // Reset the form fields
+        document.getElementById('user-name').value = '';
+        document.getElementById('user-email').value = '';
+        document.getElementById('user-msg').value = '';
+    } else {
+        alert("All fields are required!");
+    }
+}
+</script>
+   
+
+<div id="Footer">
+<center><b>God bless coding © WINNER DO THINGS
+DIFFERERENTLY</b></center>
+</div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+body{
+margin-left:3%;
+margin-right:0%;
+padding:16px;
+background-color:#000033;
+background: url(LYNX LOGO.jpg);
+background-image:url(MR_LYNX_COMPANY_LOGO.gif), 
+						url(MR_LYNX_COMPANY_LOGO.gif);
+background-repeat:repeat-y, repeat-x;
+background-size:50px;
+}
+
+h1 {
+color:#FF0000;
+}
+
+h2 {
+color:#FF0000
+}
+
+h3 {
+color:#FF0000
+}
+
+td, th{border:3px solid #OD1298;
+background-color:#E90542;
+background-image: url(Designer.png);
+color:white;
+}
+
+
+
+ul"#nav" li a {
+list-style: none;
+margin:0px;
+padding:o ;
+}
+ul#nav{
+float:center;
+margin:-5px 270px;
+padding:-250px;
+}
+ul#nav li{
+display: block;
+display: inline;
+width: 100px;
+height: 28px;
+line-height: 40px;
+text-transform: uppercase;
+text-decoration: none;
+text-align: center;
+}
+ul#nav li a {
+padding:2px 9px;
+margin:0px 2px;
+border:2px solid #FC6A08;
+border-image: url("MR_LYNX_COMPANY_LOGO.png") 30 stretch;
+background-color:#FCA908;
+text-decoration:none;
+text-align:center;
+color: black;
+font-size:76%;
+letter-spacing:0px;
+}
+.Header{
+Height: 10px;
+padding: 17px; /* header of header */
+background: #FF0066;
+border-top-left-radius:25px;
+border-bottom-right-radius:25px;
+font-size:20px;
+background:#FF0066 url("MR_LYNX_COMPANY_LOGO.gif") top right / 30px auto no-repeat;
+}
+#Main{
+margin-right:0%;/* make room for the left sidebar*/
+margin-left:0%; /* make room for the right sidebar*/
+width:900px;
+border-left:solid 3px #9900ff;
+border-right:solid 3px #9900FF;
+border-top:solid 3px #00FFFF;
+border-bottom:solid 3px #FFFFFF;
+color:#FFFFFF;
+font-size:112%;
+}
+
+#Footer{
+clear:both; /*start the footer below the float content */
+padding:16px;
+background: #238;
+background:url("MR_LYNX_COMPANY_LOGO.gif") top right / 39px auto repeat-x;
+font-size:20px;
+color:#000000;
+vertical-align:text-middle;
+}
+  /* 1. TABLETS (Up to 1024px) */
+@media screen and (max-width: 1024px) {
+  #Main {
+    width: 95%; /* Adjust width to fit tablet screens */
+    font-size: 100%; /* Slightly smaller text */
+  }
+}
+
+/* 2. MOBILE PHONES (Up to 768px) */
+@media screen and (max-width: 768px) {
+  ul#nav {
+    margin: 10px 0; /* Center the nav more tightly */
+  }
+
+  ul#nav li {
+    display: block; /* Stack menu items vertically for easier tapping */
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  ul#nav li a {
+    display: inline-block;
+    width: 80%; /* Larger buttons for fingers */
+    font-size: 90%;
+  }
+
+  .Header, #Footer {
+    font-size: 16px; /* Shrink headers to fit small screens */
+    text-align: center;
+  }
+}
+
+/* 3. SMALL PHONES (Up to 480px) */
+@media screen and (max-width: 480px) {
+  body {
+    padding: 10px;
+    background-size: 30px; /* Smaller logos for small backgrounds */
+  }
+
+  td, th {
+    padding: 8px;
+    font-size: 14px; /* Ensure table data is readable */
+  }
+
+  #Main {
+    width: 100%;
+    border-left: none; /* Remove side borders to save space */
+    border-right: none;
+  }
+}
